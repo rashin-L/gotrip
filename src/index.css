@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+
+.carousel .slider-wrapper{
+    z-index: 90;
+    position: relative;
+}
+.react-datepicker__input-container input{
+    padding-left: 0.4rem;
+    border-radius: 0.2rem;
+}
+.react-datepicker__input-container input:focus{
+    border: none;
+    outline: none;
+}
+@layer base {
+
+    @font-face {
+        font-family: 'Barlow Regular';
+        src: local('Barlow Regular'), local('Barlow-Regular'),
+            /* url('../public/static/styles/fonts/Barlow/BarlowCondensed-Regular.ttf') format('woff2'); */
+            url('../public/static/styles/fonts/Barlow/BarlowCondensed-Regular.ttf') format('woff2');
+
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Chalk';
+        src: local('Chalk'), local('Chalk'),
+            url('../public/static/styles/fonts/Chalk-Regular.ttf') format('truetype');
+
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Marker';
+        src: local('Marker'), local('Marker'),
+            url('../public/static/styles/fonts/PermanentMarker-Regular.ttf') format('truetype');
+
+    }
+
+    @font-face {
+        font-family: 'ChalklineOutline';
+        src: local('ChalklineOutline'), local('ChalklineOutline'),
+            url('../public/static/styles/fonts/ChalklineOutline-AjZM.otf') format('otf');
+
+        /* font-style: normal; */
+    }
+
+    @font-face {
+        font-family: 'Kalam-Bold';
+        src: local('Kalam-Bold'), local('Kalam-Bold'),
+            url('../public/static/styles/fonts/Kalam/Kalam-Bold.ttf') format('truetype');
+
+
+    }
+
+    @font-face {
+        font-family: 'Kalam-Light';
+        src: local('Kalam-Light'), local('Kalam-Light'),
+            url('../public/static/styles/fonts/Kalam/Kalam-Light.ttf') format('truetype');
+
+    }
+
+    @font-face {
+        font-family: 'Kalam-Regular';
+        src: local('Kalam-Regular'), local('Kalam-Regular'),
+            url('../public/static/styles/fonts/Kalam/Kalam-Regular.ttf') format('truetype');
+
+
+    }
+
+
+
+}
+
+@layer components {
+    .leading-paint {
+        line-height: 0.25rem !important;
+    }
+}
+
+
+/* @layer components {
+    .arrow-button {
+        @apply relative inline-block px-4 py-2 bg-gray-300 border-none outline-none cursor-pointer text-lg font-bold;
+
+        &::before,
+        &::after {
+            @apply content "";
+            @apply absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-black;
+        }
+
+        &::before {
+            @apply left-4 border-t-2 border-l-2 transform rotate-45;
+        }
+
+        &::after {
+            @apply right-4 border-t-2 border-r-2 transform rotate-45;
+        }
+    }
+
+    .arrow-button__text {
+        @apply relative z-10;
+    }
+} */
